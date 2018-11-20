@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/sell?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+  jpa:
+    show-sql: true
+# 对象属性为null的话不返回
+  jackson:
+    default-property-inclusion: non_null
+    time-zone: GMT+8
+    serialization:
+     WRITE_DATES_AS_TIMESTAMPS: true
+# 配置redis
+  redis:
+    host: 122.152.223.151
+    port: 6379
+    password: as1368592
+
+server:
+  servlet:
+    context-path: /sell
+wechat:
+#需要企业账号
+ mpAppId: wxc11fbd2a00e217c8
+ mpAppSecret: 64995be8131a998099e0f1550d0ff949
+ openAppId: wxc11fbd2a00e217c8
+ openAppSecret: 64995be8131a998099e0f1550d0ff949
+ machId: asdsad2q
+ machKey: qwewqeqwewqewq
+ KeyPath: /xx/xx/xx
+ notifyUrl: xxx/sell/pay/notify
+ templateId:
+   orderStatus: edadsadas
+
+#配置公众号和开发平台路径
+projecturl:
+  wechatMpAuthorize: http://ysh.nat100.top
+  wechatOpenAuthorize: http://ysh.nat100.top
+  sell: http://ysh.nat100.top
